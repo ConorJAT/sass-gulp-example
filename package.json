@@ -9,7 +9,9 @@
     "start": "node ./server/app.js",
     "pretest": "eslint ./server --fix",
     "test": "echo \"Tests complete\"",
-    "heroku-postbuild": "webpack"
+    "heroku-postbuild": "gulp herokuBuild",
+    "build": "gulp build",
+    "watch": "gulp watchTask"
   },
   "author": "Cody Van De Mark / Austin Willoughby",
   "license": "Apache 2.0",
